@@ -30,7 +30,7 @@ a{
 }
 
 p{
-    margin: 0.5 rem 0;  /*1 rem is by default equivalent to 16 pixel and 0.5rem equiv. to 8 px*/
+    margin: 0.5rem 0;  /*1 rem is by default equivalent to 16 pixel and 0.5rem equiv. to 8 px*/
 }
 
 img{
@@ -41,7 +41,7 @@ img{
     width: 100%;
     height: 93vh;
     position: relative;
-    background: url('NETFLIX-background.png') no-repeat center center/cover;
+    background: url('NETFLIX-background.png') no-repeat center center/cover; /*no repeat*/
 }
 .showcase::after{
     content: '';
@@ -65,9 +65,10 @@ img{
 .showcase-top img{
     width: 170px;
     position: absolute; /*its position is relative to the paraent which is relative position*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*translate(x,y)*/
+    top: 50%; 
+    left: 50%;  
+    transform: translate(-50%, -50%); 
+    /* translate(x,y) */
 }
 
 .showcase-top a{
@@ -81,6 +82,7 @@ img{
 .showcase-content{
     position: relative;
     z-index: 2;
+    /* width: 65%; */
     margin: auto;
     display: flex;
     flex-direction: column; 
@@ -336,7 +338,7 @@ text-align: center;
     margin-left: 1rem;
 }
 
-@media (max-height: 960px) {
+@media (max-width: 960px) {
     .showcase {
       height: 70vh;
   }
